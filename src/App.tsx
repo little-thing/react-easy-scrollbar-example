@@ -6,7 +6,12 @@ function App() {
 
   return (
     <>
-      <EList/>
+      <div>
+        <div>
+          <h1>Element List</h1>
+        </div>
+        <EList />
+      </div>
     </>
 
   )
