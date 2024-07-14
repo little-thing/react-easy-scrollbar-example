@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{border:'1px solid black'}}>
         <div>
           <h1>1.Element List</h1>
         </div>
