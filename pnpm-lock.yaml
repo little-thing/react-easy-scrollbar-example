@@ -12,8 +12,8 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
   react-easy-scrollbar:
-    specifier: ^0.0.1
-    version: 0.0.1(perfect-scrollbar@1.5.5)(react-dom@18.3.1)(react@18.3.1)
+    specifier: ^0.0.4
+    version: 0.0.4(react-dom@18.3.1)(react@18.3.1)
 
 devDependencies:
   '@types/node':
@@ -1698,10 +1698,9 @@ packages:
       scheduler: 0.23.2
     dev: false
 
-  /react-easy-scrollbar@0.0.1(perfect-scrollbar@1.5.5)(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-35lNiQPY/v5I3RujO4Cl9sdUH5k4/oYS+MKJC8t7sP/WApyUcZvbmdyRODuQx3fPme18vP/uRmy7+sjp8h1NZQ==}
+  /react-easy-scrollbar@0.0.4(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-HSVjQKt2G6aTiRmaaPjJcpdG8bPAU13FBtzpAq8laoyA1MCzkQ/DLGsQLS4f0FpUCeXsXRlNjNo1u1/xeHeY+w==}
     peerDependencies:
-      perfect-scrollbar: ^1.5.5
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
