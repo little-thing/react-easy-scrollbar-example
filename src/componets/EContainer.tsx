@@ -20,7 +20,7 @@ for (let i = 0; i < 100; i++) {
 }
 
 type Props = {
-  addRef: boolean
+  addRef?: boolean
 }
 
 const EContainer = ({addRef}:Props) => {
