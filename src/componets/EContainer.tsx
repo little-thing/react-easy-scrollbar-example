@@ -1,6 +1,5 @@
-import { useEasyScrollbar } from 'react-easy-scrollbar';
+import { EasyScrollContainer } from 'react-easy-scrollbar';
 import { useRef } from 'react';
-import EasyScrollbar from '../../../src/components/EasyScrollbar.tsx';
 
 interface DataType {
   key: React.Key;
@@ -24,13 +23,13 @@ type Props = {
   addRef: boolean
 }
 
-const EContainer: React.FC = ({addRef}:Props) => {
+const EContainer = ({addRef}:Props) => {
   const ref = useRef<HTMLDivElement>(null);
 
   // ... You can use ref to complete your own logic, including event handling for scrollbars
 
 
-  return <EasyScrollbar style={{ width: '100%', height: 500, overflow: 'auto', position: 'relative' }} ref={addRef?ref:undefined}>
+  return <EasyScrollContainer style={{ width: '100%', height: 500, overflow: 'auto', position: 'relative' }} ref={addRef?ref:undefined}>
     {
       data.map(item => {
         return <div style={{ display: 'flex', justifyItems: 'start', alignItems: 'center' }} key={item.key}>
@@ -40,7 +39,7 @@ const EContainer: React.FC = ({addRef}:Props) => {
         </div>
       })
     }
-  </EasyScrollbar>
+  </EasyScrollContainer>
 };
 
 export default EContainer;
